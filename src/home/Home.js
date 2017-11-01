@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import { ScrollView, TouchableHighlight, View, StyleSheet, Platform, Image } from 'react-native'
-import colors from 'HSColors'
-import socialColors from 'HSSocialColors'
-import fonts from 'HSFonts'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import React, { Component } from 'react';
+import { ScrollView, TouchableHighlight, View, StyleSheet, Platform, Image } from 'react-native';
+import colors from 'HSColors';
+import socialColors from 'HSSocialColors';
+import fonts from 'HSFonts';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {
   Text,
@@ -24,7 +24,7 @@ class Home extends Component {
     const { toggleSideMenu } = this.props
     return (
 
-        <ScrollView style={{backgroundColor: 'white'}}>
+        <ScrollView style={{ backgroundColor: 'white' }}>
 
         <View >
           <Icon color='white' name='whatshot' size={62} />
@@ -36,7 +36,7 @@ class Home extends Component {
           onPress={() => log()}
           title='PLUG'
           textStyle={styles.heading}
-        icon={{ name: 'power-plug', type: 'entypo', size: 80 }}
+          icon={{ name: 'power-plug', type: 'entypo', size: 80 }}
           buttonStyle={styles.hero} />
 
         <Button
@@ -144,12 +144,13 @@ class Home extends Component {
           backgroundColor={socialColors.vimeo}
           icon={{name: 'change-history'}}
           title='LARGE RAISED WITH ICON' />
-        <Button
+        <Button>
           large={true}
           buttonStyle={[{marginBottom: 15, marginTop: 15}]}
           icon={{name: 'code'}}
           backgroundColor={socialColors.twitter}
-          title='LARGE ANOTHER BUTTON' />
+          title='LARGE ANOTHER BUTTON'
+        </Button>
       </ScrollView>
     )
   }
@@ -200,6 +201,6 @@ styles = StyleSheet.create({
       }
     })
   }
-})
+});
 
-export default Home
+export default Home;

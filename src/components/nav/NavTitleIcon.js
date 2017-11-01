@@ -1,17 +1,17 @@
-/**
+ /**
  * @providesModule HSNavTitleIcon
  */
 
-import React from 'react'
-import { View, Image, StyleSheet,Text } from 'react-native'
+import React from 'react';
+import { View, StyleSheet, Text } from 'react-native';
 
-let styles = {}
+let styles = {};
 
-const NavTitleIcon = ({src}) => (
+const NavTitleIcon = ({ src }) => (
   <View>
     <Text style={styles.heading}>SMART HOME</Text>
   </View>
-)
+);
 
 styles = StyleSheet.create({
   container: {
@@ -25,6 +25,6 @@ styles = StyleSheet.create({
     width: 160,
     height: 34
   }
-})
+});
 
-export default NavTitleIcon
+export default NavTitleIcon;
